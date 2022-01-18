@@ -1,0 +1,30 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function aloha_theme($existing, $type, $theme, $path) : array{
+  return [
+    'aloha-page' => [
+      'variables' => [
+        'form' => NULL,
+        'feedback' => NULL,
+      ],
+    ],
+    'response-table-block' => [
+      'variables' => [
+        'name' => NULL,
+        'tel' => NULL,
+        'email' => NULL,
+        'image' => NULL,
+        'avatar' => NULL,
+        'text' => NULL,
+        'date' => NULL,
+        'id' => NULL,
+        'delete' => NULL,
+        'edit' => NULL,
+      ]
+    ]
+  ];
+}

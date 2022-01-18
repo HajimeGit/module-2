@@ -1,0 +1,15 @@
+uuid: 32013bab-94cd-4c9f-b104-116e0d1f4e8d
+langcode: en
+status: true
+dependencies: {  }
+name: response
+label: Response
+effects:
+  3e3765ff-4929-4b59-b71c-8670d536df33:
+    uuid: 3e3765ff-4929-4b59-b71c-8670d536df33
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

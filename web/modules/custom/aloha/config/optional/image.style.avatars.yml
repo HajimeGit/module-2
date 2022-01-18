@@ -1,0 +1,15 @@
+uuid: 56cf2463-83df-41b8-b073-530281de8f9f
+langcode: en
+status: true
+dependencies: {  }
+name: avatars
+label: Avatars
+effects:
+  be362b61-f718-4639-afa9-fe0f807868d1:
+    uuid: be362b61-f718-4639-afa9-fe0f807868d1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

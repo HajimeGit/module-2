@@ -1,0 +1,40 @@
+.aloha_results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.response_table,
+.response_wrapper {
+  margin-top: 30px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.user_name,
+.user_avatar,
+.user_tel,
+.response_text {
+  margin: 10px 0;
+}
+.response_buttons {
+  display: flex;
+  gap: 15px;
+}
+.user_avatar,
+.response_image {
+  display: flex;
+  justify-content: center;
+}
+.response_wrapper {
+  transition: all .2s;
+  padding: 20px;
+  border: solid 2px #0d77b5;
+  border-radius: 0.1875rem;
+  box-shadow: 0 -1px 10px 2px rgba(34, 60, 80, 0.2);
+  min-height: 500px;
+  min-width: 300px;
+}
+.response_wrapper:hover {
+  box-shadow: 0 0 29px 0 rgb(0 0 0 / 20%);
+}

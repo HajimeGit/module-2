@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Install function for the hajime module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function aloha_schema(): array {
+  $schema['aloha'] = [
+    'description' => 'Aloha module.',
+    'fields' => [
+      'id' => [
+        'description' => 'The current id',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'Name ',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+      ],
+      'tel' => [
+        'description' => 'Number phone of user',
+        'type' => 'varchar',
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'image' => [
+        'type' => 'int',
+        'not null' => FALSE,
+      ],
+      'avatar' => [
+        'type' => 'int',
+        'not null' => FALSE,
+      ],
+      'text' => [
+        'description' => 'Text ',
+        'type' => 'text',
+        'size' => 'normal',
+        'not null' => TRUE,
+      ],
+      'date' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function aloha_schema_uninstall() {
+  \Drupal::state()->delete('aloha.aloha');
+}

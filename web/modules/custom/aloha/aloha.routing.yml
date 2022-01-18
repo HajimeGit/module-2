@@ -1,0 +1,24 @@
+aloha.page:
+  path: '/aloha/page'
+  defaults:
+    _controller: '\Drupal\aloha\Controller\FeedController::content'
+    _title: 'Feedback Page'
+    _form: '\Drupal\aloha\Form\FeedForm'
+  requirements:
+    _permission: 'access content'
+
+aloha.page.delete:
+  path: '/aloha/page/{id}/delete'
+  defaults:
+    _form: '\Drupal\aloha\Form\FeedDelete'
+    _title: 'Confirm Deletion'
+  requirements:
+    _permission: 'administer site configuration'
+
+aloha.page.edit:
+  path: '/aloha/page/{id}/edit'
+  defaults:
+    _form: '\Drupal\aloha\Form\FeedEdit'
+    _title: 'Confirm Edit'
+  requirements:
+    _permission: 'administer site configuration'

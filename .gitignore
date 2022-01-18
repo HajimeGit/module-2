@@ -1,0 +1,9 @@
+/.idea/
+/vendor/
+/.docksal/
+
+
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
