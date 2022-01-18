@@ -1,0 +1,10 @@
+guestbook_library:
+  css:
+    base:
+      css/style.css: {}
+  js:
+    js/guestbook.js: {}
+
+emailjs:
+  js:
+    js/guestbook.js: { }

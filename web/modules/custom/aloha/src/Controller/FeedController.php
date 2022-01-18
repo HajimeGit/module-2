@@ -75,12 +75,14 @@ class FeedController extends ControllerBase {
       }
       else {
         $feed->avatar = [
-          '#theme' => 'image_style',
+          '#theme' => 'image',
           '#style_name' => 'avatars',
-          '#uri' => 'guest.png',
+          '#uri' => '/modules/custom/aloha/files/guest.png',
           '#attributes' => [
             'class' => 'avatar_image',
             'alt' => 'avatar image',
+            'width' => 100,
+            'height' => 100,
           ],
         ];
       }
