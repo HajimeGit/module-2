@@ -21,12 +21,12 @@ function aloha_schema(): array {
       'name' => [
         'description' => 'Name ',
         'type' => 'varchar',
-        'length' => 32,
+        'length' => 100,
         'not null' => TRUE,
       ],
       'tel' => [
-        'description' => 'Number phone of user',
         'type' => 'varchar',
+        'length' => 15,
         'not null' => TRUE,
       ],
       'email' => [
@@ -43,7 +43,7 @@ function aloha_schema(): array {
         'not null' => FALSE,
       ],
       'text' => [
-        'description' => 'Text ',
+        'description' => 'varchar',
         'type' => 'text',
         'size' => 'normal',
         'not null' => TRUE,

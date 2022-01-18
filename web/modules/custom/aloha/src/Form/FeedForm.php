@@ -67,7 +67,7 @@ class FeedForm extends FormBase {
       '#title' => $this->t('Your email:'),
       '#pattern' => '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$',
       '#placeholder' => $this->t("Email"),
-      '#description' => $this->t('Email must be validated:Only latin characters and -, _'),
+      '#description' => $this->t('Email must be validated'),
       '#required' => TRUE,
       '#attributes' => [
         'maxlength' => 30,
@@ -151,17 +151,19 @@ class FeedForm extends FormBase {
 
   /**
    * Submitting form and saving dates in database.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $file_avatar = $form_state->getValue(['avatar']);
     $file_image = $form_state->getValue(['response_image']);
-    $data_avatar = File::load($file_avatar[0]);
-    $data_image = File::load($file_image[0]);
     if ($file_avatar != NULL) {
+      $data_avatar = File::load($file_avatar[0]);
       $data_avatar->setPermanent();
       $data_avatar->save();
     }
     elseif ($file_image != NULL) {
+      $data_image = File::load($file_image[0]);
       $data_image->setPermanent();
       $data_image->save();
     }
