@@ -21,6 +21,14 @@
   display: flex;
   gap: 15px;
 }
+.secondary-nav__menu-link:after {
+  color: #2494db;
+}
+.response_edit a,
+.response_delete a {
+  text-decoration: none;
+  color: #2494db;
+}
 .user_avatar,
 .response_image {
   display: flex;

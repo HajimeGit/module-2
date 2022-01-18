@@ -15,11 +15,11 @@
     </div>
     {% if user.hasPermission('administer nodes') %}
       <div class="response_buttons">
-        <div class="cat-edit">
+        <div class="response_edit secondary-nav__menu-link">
           <a href="/aloha/page/{{id}}/edit"  class="use-ajax" data-dialog-type="modal" > {{ edit }}</a>
         </div>
-        <div class="response_delete">
-          <a href="/aloha/page/{{id}}/delete"  class="use-ajax" data-dialog-type="modal" > {{ delete }}</a>
+        <div class="response_delete secondary-nav__menu-link">
+          <a href="/aloha/page/{{id}}/delete"  clasws="use-ajax" data-dialog-type="modal" > {{ delete }}</a>
         </div>
       </div>
     {% endif %}
