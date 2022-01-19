@@ -82,7 +82,7 @@ class FeedForm extends FormBase {
       '#placeholder' => $this->t("Phone number"),
       '#pattern' => '^(?:\+38)?(0\d{9})$',
       '#attributes' => [
-        'maxlength' => 20,
+        'maxlength' => 30,
       ],
     ];
     $form['response'] = [

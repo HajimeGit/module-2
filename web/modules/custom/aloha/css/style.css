@@ -43,7 +43,21 @@
   box-shadow: 0 -1px 10px 2px rgba(34, 60, 80, 0.2);
   min-height: 620px;
   min-width: 450px;
+  max-width: 500px;
 }
 .response_wrapper:hover {
   box-shadow: 0 0 29px 0 rgb(0 0 0 / 20%);
+}
+.feed-form {
+  text-align: center;
+}
+.js-form-required {
+  margin: 0 auto;
+}
+label[for="edit-avatar-upload"],
+label[for="edit-response-image-upload"] {
+  margin: 0 auto;
+}
+.form-item__description {
+  max-width: unset!important;
 }
