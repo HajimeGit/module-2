@@ -69,7 +69,7 @@ class FeedController extends ControllerBase {
           '#uri' => File::load($feed->avatar)->getFileUri(),
           '#attributes' => [
             'class' => 'avatar_image',
-            'alt' => 'cat photo',
+            'alt' => 'avatar photo',
           ],
         ];
       }
