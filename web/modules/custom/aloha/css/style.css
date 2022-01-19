@@ -58,6 +58,6 @@ label[for="edit-avatar-upload"],
 label[for="edit-response-image-upload"] {
   margin: 0 auto;
 }
-.form-item__description {
-  max-width: unset!important;
+.aloha_form .form-item__description {
+  max-width: unset;
 }
