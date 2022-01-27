@@ -1,52 +1,56 @@
-.aloha_results {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-.response_table,
 .response_wrapper {
   margin-top: 30px;
-  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.user_name,
-.user_avatar,
-.user_tel,
-.response_text {
-  margin: 10px 0;
+  transition: all .2s;
+  padding: 20px;
+  border: 1px solid #7e96a7;
+  border-radius: 0.1875rem;
 }
 .response_buttons {
   display: flex;
   gap: 15px;
-}
-.secondary-nav__menu-link:after {
-  color: #2494db;
+  justify-content: end;
+  flex-basis: 50%;
 }
 .response_edit a,
 .response_delete a {
   text-decoration: none;
-  color: #2494db;
+  color: #7d7d7d;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+}
+.response_edit a:hover,
+a:focus,
+.response_delete a:hover,
+a:focus {
+  color: #7d7d7d;
+  border: none;
+  outline: none;
+}
+.response_edit a:after,
+.response_delete a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7d7d7d;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.response_edit a:hover:after,
+a:focus:after,
+.response_delete a:hover:after,
+a:focus:after {
+  width: 100%;
 }
 .user_avatar,
 .response_image {
   display: flex;
-  justify-content: center;
-}
-.response_wrapper {
-  transition: all .2s;
-  padding: 20px;
-  border: solid 2px #0d77b5;
-  border-radius: 0.1875rem;
-  box-shadow: 0 -1px 10px 2px rgba(34, 60, 80, 0.2);
-  min-height: 620px;
-  min-width: 450px;
-  max-width: 500px;
-}
-.response_wrapper:hover {
-  box-shadow: 0 0 29px 0 rgb(0 0 0 / 20%);
+  justify-content: start;
 }
 .feed-form {
   text-align: center;
@@ -54,10 +58,74 @@
 .js-form-required {
   margin: 0 auto;
 }
-label[for="edit-avatar-upload"],
-label[for="edit-response-image-upload"] {
+label[for*="edit-avatar"],
+label[for*="edit-response-image"] {
   margin: 0 auto;
 }
 .aloha_form .form-item__description {
   max-width: unset;
+}
+.user_info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.user_info .user_name {
+  font-weight: 700;
+  color: #4c4c4c;
+}
+.user_info .added_date,
+.user_tel,
+.user_email {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+.user_contacts {
+  display: flex;
+  gap: 30px;
+  flex-basis: 50%;
+}
+.response_info,
+.user_contacts {
+  padding-left: 70px;
+}
+.response_text {
+  margin: 10px 0;
+}
+.user_contacts {
+  margin-top: 30px;
+}
+.title_table {
+  font-weight: 300;
+  margin: 61px 0 54px;
+  text-align: center;
+  color: #4c4c4c;
+  position: relative;
+}
+.title_table p {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+  background: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.title_table:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+  background: #c6c6c6;
+}
+#edit-response {
+  width: 66%;
+  margin: 0 auto;
+  padding: 10px;
+}
+#edit-name,
+#edit-email,
+#edit-phone-number {
+  padding: 10px;
 }

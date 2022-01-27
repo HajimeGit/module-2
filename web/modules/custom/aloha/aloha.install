@@ -26,7 +26,7 @@ function aloha_schema(): array {
       ],
       'tel' => [
         'type' => 'varchar',
-        'length' => 15,
+        'length' => 30,
         'not null' => TRUE,
       ],
       'email' => [

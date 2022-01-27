@@ -83,6 +83,7 @@ class FeedForm extends FormBase {
       '#pattern' => '^(?:\+38)?(0\d{9})$',
       '#attributes' => [
         'maxlength' => 30,
+        'size' => 60,
       ],
     ];
     $form['response'] = [

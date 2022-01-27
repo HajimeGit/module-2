@@ -81,8 +81,8 @@ class FeedController extends ControllerBase {
           '#attributes' => [
             'class' => 'avatar_image',
             'alt' => 'avatar image',
-            'width' => 100,
-            'height' => 100,
+            'width' => 50,
+            'height' => 50,
           ],
         ];
       }

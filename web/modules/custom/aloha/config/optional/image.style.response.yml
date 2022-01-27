@@ -1,15 +1,15 @@
-uuid: 32013bab-94cd-4c9f-b104-116e0d1f4e8d
+uuid: 56cf2463-83df-41b8-b073-530281de8f9f
 langcode: en
 status: true
 dependencies: {  }
-name: response
-label: Response
+name: avatars
+label: Avatars
 effects:
-  3e3765ff-4929-4b59-b71c-8670d536df33:
-    uuid: 3e3765ff-4929-4b59-b71c-8670d536df33
+  be362b61-f718-4639-afa9-fe0f807868d1:
+    uuid: be362b61-f718-4639-afa9-fe0f807868d1
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 150
-      height: 150
+      width: 50
+      height: 50
       anchor: center-center
